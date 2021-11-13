@@ -6,3 +6,9 @@ weight_s = 600
 haight_w= 600
 screen = pygame.display.set_mode((weight_s,haight_w))
 pygame.display.set_caption('Run Away')
+def string (text, x, y, size): 
+     cz = pygame.font.SysFont ("Arial", size)
+     rend = render (text, 1, (255,100,100)) 
+     screen.blit (rend, (x, y)) 
+string ('Press space to start', 80,150,20) 
+pygame.display.update()
