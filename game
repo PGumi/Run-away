@@ -5,3 +5,4 @@ pygame.init()
 weight_s = 600
 haight_w= 600
 screen = pygame.display.set_mode((weight_s,haight_w))
+pygame.display.set_caption('Run Away')
