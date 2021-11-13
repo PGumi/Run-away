@@ -1,3 +1,7 @@
 import pygame 
 import random 
 import os
+pygame.init()
+weight_s = 600
+haight_w= 600
+screen = pygame.display.set_mode((weight_s,haight_w))
