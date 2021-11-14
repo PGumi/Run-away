@@ -10,10 +10,12 @@ def string (text, x, y, size):
      cz = pygame.font.SysFont ("Arial", size)
      rend = render (text, 1, (255,100,100)) 
      screen.blit (rend, (x, y)) 
+shows = "menu"
 while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
             quit()
-string ('Press space to start', 80,150,20) 
+        if shows == "menu":
+          string ('Press space to start', 80,150,20) 
 pygame.display.update()
